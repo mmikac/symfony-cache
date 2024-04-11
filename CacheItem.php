@@ -135,9 +135,9 @@ final class CacheItem implements ItemInterface
         if ('' === $key) {
             throw new InvalidArgumentException('Cache key length must be greater than zero.');
         }
-        if (false !== strpbrk($key, self::RESERVED_CHARACTERS)) {
-            throw new InvalidArgumentException(sprintf('Cache key "%s" contains reserved characters "%s".', $key, self::RESERVED_CHARACTERS));
-        }
+        // if (false !== strpbrk($key, self::RESERVED_CHARACTERS)) {
+        //     throw new InvalidArgumentException(sprintf('Cache key "%s" contains reserved characters "%s".', $key, self::RESERVED_CHARACTERS));
+        // }
 
         return $key;
     }
